@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Semana 4 clase jueves</string>
+
+    <string name="btn_title_main">Ir al Formulario</string>
+    <string name="tv_status_main">No completado </string>
+
+    <string name="hint_userform_name">¿Cómo te llamas?</string>
+    <string name="hint_userform_email">extracool@eco.edu.co</string>
+    <string name="hint_userform_username">monk</string>
+
+    <string name="btn_title_userform">completar</string>
+
+
+</resources>

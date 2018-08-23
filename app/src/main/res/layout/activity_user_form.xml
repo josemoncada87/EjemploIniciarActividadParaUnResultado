@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserFormActivity">
+
+    <EditText
+        android:id="@+id/edt_userform_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="93dp"
+        android:ems="10"
+        android:hint="@string/hint_userform_name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_userform_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="@string/hint_userform_email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="@+id/edt_userform_name"
+        app:layout_constraintTop_toBottomOf="@+id/edt_userform_name" />
+
+    <EditText
+        android:id="@+id/edt_userform_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="@string/hint_userform_username"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/edt_userform_email"
+        app:layout_constraintTop_toBottomOf="@+id/edt_userform_email" />
+
+    <Button
+        android:id="@+id/btn_userform_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="@string/btn_title_userform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_userform_username" />
+</android.support.constraint.ConstraintLayout>
