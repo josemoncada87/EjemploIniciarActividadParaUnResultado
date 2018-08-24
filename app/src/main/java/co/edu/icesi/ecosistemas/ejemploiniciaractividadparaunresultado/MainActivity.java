@@ -34,7 +34,18 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        if(requestCode == Constants.REQ_NEW_USER){
+            if(resultCode == Constants.RESP_NEW_USER){
+                String tname = data.getStringExtra("name");
+                String tmail = data.getStringExtra("email");
+                String tusername = data.getStringExtra("userName");
 
+                UserModel newUser = new UserModel(tname, tmail, tusername);
+
+                tvMainStatus.setText("completado con:" + newUser.getName());
+
+            }
+        }
         super.onActivityResult(requestCode, resultCode, data);
     }
 }
